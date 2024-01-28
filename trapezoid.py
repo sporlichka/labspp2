@@ -48,7 +48,7 @@ def main():
     
     # C
     C = (abs(true_value-T) / (true_value)) * 100
-    print("C = ", int(C), "%")
+    print("C = ", int(C) + "%")
 
 if __name__ == "__main__":
     main()
