@@ -117,10 +117,8 @@ print(ispalindrome("abba")) #true
 #12
 def histogram(arr):
   for i in arr:
-    strin = ''
-    for j in range(i):
-      strin += "*"
-    print(strin)
+    strin = '*'
+    print(strin * i)
 histogram([3, 4, 2])
 #13
 import random
