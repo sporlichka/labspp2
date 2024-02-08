@@ -42,8 +42,8 @@ solve(x, y)
 #4 filter primes
 def check_prime(i):
   for x in range(2, i):
-      if i % x == 0:
-         return False
+      if i % x == 0 or i == 1:
+        return False
   return True
 
 lis = [1, 3, 4, 5, 8, 12, 11]      
