@@ -30,7 +30,7 @@ def difference_in_seconds(date1, date2):
 
   return difference
 
-# Example
+# Example for exercise 4
 date1 = datetime(2024, 2, 22, 10, 0, 0)
 date2 = datetime(2024, 2, 23, 12, 30, 0)
 
