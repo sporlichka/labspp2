@@ -11,7 +11,7 @@ Write a Python program to delete file by specified path. Before deleting check f
 import os
 import string
 #1
-path = r'C:\Users\Данис\Desktop\another pp2'
+path = r'C:\Users\Данис\Desktop\anotherpp2'
 print("Only directories:")
 print([name for name in os.listdir(path) if os.path.isdir(os.path.join(path, name))])
 print("\nOnly files:")

@@ -23,20 +23,20 @@ Write a Python program to convert a given camel case string to snake case.
 import re
 
 # 1
-s = str(input())
-p = re.compile('a[b]*') 
-m = p.search(s)
+s = str(input()) #ab cvsvabbbbb
+p = re.compile('a[b]*') #abbbb ab abbb cab
+m = p.search(s) #abbbbb
 print(m)
 
 # 2
 s = str(input())
-p = re.compile('ab{3}|ab{2}')
+p = re.compile('ab{3}|ab{2}') #abbb abb
 m = p.search(s)
 print(m)
 
 # 3
 s = str(input())
-p = re.compile('^[a-z]+_[a-z]+$')
+p = re.compile('^[a-z]+_[a-z]+$') #a_avaZ
 m = p.search(s)
 print(m)
 
@@ -58,7 +58,7 @@ p = re.sub("[ ,.]", ":", s)
 print(p)
 
 # 7
-s = str(input())
+s = str(input()) #ab_va_va abVaVa
 words = s.split('_')
 camel = words[0] + ''.join(word.capitalize() for word in words[1:])
 print(camel)
